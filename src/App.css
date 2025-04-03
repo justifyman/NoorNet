@@ -1,0 +1,304 @@
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Stars/particles effect */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 0.7px, transparent 0.7px);
+  background-size: 50px 50px;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 0.3px, transparent 0.3px);
+  background-size: 30px 30px;
+  background-position: 10px 10px;
+}
+
+/* Geometric pattern background - made more subtle */
+.geometric-pattern {
+  background-color: #1e1c2e;
+  background-image: 
+    linear-gradient(30deg, #2a293930 12%, transparent 12.5%, transparent 87%, #2a293930 87.5%, #2a293930),
+    linear-gradient(150deg, #2a293930 12%, transparent 12.5%, transparent 87%, #2a293930 87.5%, #2a293930),
+    linear-gradient(30deg, #2a293930 12%, transparent 12.5%, transparent 87%, #2a293930 87.5%, #2a293930),
+    linear-gradient(150deg, #2a293930 12%, transparent 12.5%, transparent 87%, #2a293930 87.5%, #2a293930),
+    linear-gradient(60deg, #2a293920 25%, transparent 25.5%, transparent 75%, #2a293920 75%, #2a293920),
+    linear-gradient(60deg, #2a293920 25%, transparent 25.5%, transparent 75%, #2a293920 75%, #2a293920);
+  background-size: 120px 200px;
+  background-position: 0 0, 0 0, 60px 100px, 60px 100px, 0 0, 60px 100px;
+}
+
+/* Subtle wave pattern - made more subtle */
+.wave-pattern {
+  background-color: transparent;
+  background-image: 
+    repeating-linear-gradient(
+      45deg, 
+      rgba(90, 74, 153, 0.015) 0, 
+      rgba(90, 74, 153, 0.015) 1px, 
+      transparent 0, 
+      transparent 50%
+    ),
+    repeating-linear-gradient(
+      -45deg, 
+      rgba(66, 56, 110, 0.015) 0, 
+      rgba(66, 56, 110, 0.015) 1px, 
+      transparent 0, 
+      transparent 50%
+    );
+  background-size: 60px 60px;
+}
+
+/* Topographic pattern - made more subtle */
+.topographic-pattern {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(76, 64, 132, 0.015) 0%, rgba(76, 64, 132, 0.015) 10%, transparent 10.2%),
+    radial-gradient(circle at 50% 50%, rgba(76, 64, 132, 0.01) 0%, rgba(76, 64, 132, 0.01) 20%, transparent 20.2%),
+    radial-gradient(circle at 50% 50%, rgba(76, 64, 132, 0.005) 0%, rgba(76, 64, 132, 0.005) 30%, transparent 30.2%);
+  background-size: 500px 500px;
+  background-position: 0 0, 0 0, 0 0;
+}
+
+/* Opacity utility class */
+.opacity-15 {
+  opacity: 0.15;
+}
+
+/* Floating particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: float 15s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-30px) translateX(15px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-15px);
+  }
+  75% {
+    transform: translateY(30px) translateX(5px);
+  }
+}
+
+/* Islamic-inspired geometric pattern */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: 
+    linear-gradient(30deg, rgba(255, 255, 255, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(30deg, rgba(255, 255, 255, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(60deg, rgba(255, 255, 255, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(60deg, rgba(255, 255, 255, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+/* Subtle stars background */
+.starry-night {
+  background-color: #1e1c2e;
+  background-image: 
+    radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 2px),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 550px 550px, 350px 350px, 250px 250px;
+  background-position: 0 0, 40px 60px, 130px 270px;
+}
+
+/* Subtle wave pattern */
+.wave-bg {
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(255, 255, 255, 0.03) 50%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 255, 255, 0.03) 50%, transparent 52%);
+  background-size: 60px 60px;
+  background-position: 0 0;
+}
+
+/* Soft gradient background */
+.soft-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(76, 29, 149, 0.2) 0%,
+    rgba(30, 28, 46, 0) 30%,
+    rgba(30, 28, 46, 0) 70%,
+    rgba(91, 33, 182, 0.2) 100%
+  );
+}
+
+/* Minimal grid pattern */
+.minimal-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  background: 
+    radial-gradient(at 40% 20%, rgba(113, 44, 249, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(63, 81, 181, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(128, 0, 128, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(0, 0, 255, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(111, 66, 193, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(64, 64, 172, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgba(102, 51, 153, 0.1) 0px, transparent 50%);
+}
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Subtle circuit board pattern */
+.circuit-pattern {
+  background-color: transparent;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
+  position: relative;
+}
+
+.circuit-pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+  background-size: 60px 60px;
+  background-position: 30px 30px;
+}
+
+.circuit-pattern::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 120px 120px;
+}
+
+/* Nebula background */
+.nebula-bg {
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(76, 29, 149, 0.15) 0%, rgba(30, 28, 46, 0) 50%),
+    radial-gradient(circle at 20% 70%, rgba(124, 58, 237, 0.1) 0%, rgba(30, 28, 46, 0) 45%),
+    radial-gradient(circle at 80% 40%, rgba(91, 33, 182, 0.1) 0%, rgba(30, 28, 46, 0) 40%);
+}
+
+/* Hexagonal pattern */
+.hexagon-pattern {
+  background-color: transparent;
+  background-image: 
+    linear-gradient(30deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03));
+  background-size: 80px 140px;
+}
+
+/* Arabic-inspired pattern */
+.arabic-pattern {
+  background-color: transparent;
+  background-image: 
+    radial-gradient(circle at 0% 50%, transparent 9px, rgba(255, 255, 255, 0.03) 10px, transparent 11px),
+    radial-gradient(circle at 100% 50%, transparent 9px, rgba(255, 255, 255, 0.03) 10px, transparent 11px),
+    radial-gradient(circle at 50% 0%, transparent 9px, rgba(255, 255, 255, 0.03) 10px, transparent 11px),
+    radial-gradient(circle at 50% 100%, transparent 9px, rgba(255, 255, 255, 0.03) 10px, transparent 11px);
+  background-size: 40px 40px;
+  background-position: 0 0;
+}
+
+/* Arabesque pattern */
+.arabesque-pattern {
+  background-color: transparent;
+  background-image: 
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 50%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 50%);
+  background-size: 30px 30px;
+}
+
+/* Moroccan pattern */
+.moroccan-pattern {
+  background-color: transparent;
+  background-image: 
+    radial-gradient(circle at 50% 59%, rgba(255, 255, 255, 0.03) 3%, transparent 4%),
+    radial-gradient(circle at 50% 41%, rgba(255, 255, 255, 0.03) 3%, transparent 4%),
+    radial-gradient(circle at 32% 50%, rgba(255, 255, 255, 0.03) 3%, transparent 4%),
+    radial-gradient(circle at 68% 50%, rgba(255, 255, 255, 0.03) 3%, transparent 4%);
+  background-size: 60px 60px;
+}
