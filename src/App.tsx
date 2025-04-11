@@ -46,9 +46,11 @@ function App() {
 
       <Header />
       <div className="flex flex-col items-center justify-center flex-grow px-4 md:px-6 relative z-10">
+        <a href="#">
         <h1 className="text-4xl md:text-6xl font-semibold mb-6 md:mb-8 text-white text-center">
           NoorNet
         </h1>
+          </a>
         <SearchSection />
         <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-3 md:gap-4">
           <div className="flex items-center text-xs text-gray-400 bg-[#2a2939]/50 px-3 py-1.5 rounded-full backdrop-blur-sm hover:bg-[#2a2939]/70 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_4px_12px_-2px_rgba(137,100,205,0.3)]">
