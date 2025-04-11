@@ -46,7 +46,7 @@ function App() {
 
       <Header />
       <div className="flex flex-col items-center justify-center flex-grow px-4 md:px-6 relative z-10">
-        <a href="#">
+        <a href="https://noornet.vercel.app/>
         <h1 className="text-4xl md:text-6xl font-semibold mb-6 md:mb-8 text-white text-center">
           NoorNet
         </h1>
