@@ -1,8 +1,6 @@
 // List of trusted Islamic websites to search
 export const TRUSTED_WEBSITES: string[] = [
   "islamqa.info",
-  "islamweb.net",
-  "islamweb.com",
   "abdurrahman.org",
   "dorar.net/en",
 ];
